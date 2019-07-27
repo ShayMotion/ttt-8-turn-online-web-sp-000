@@ -13,6 +13,12 @@ if valid_move?(board,index)
   display_board(board)
 end
 
+def move(board, index, token)
+  board[index] = token
+  play(board)
+  
+end
+
 def input_to_index(move)
    index = move.to_i - 1
    index
